@@ -1,0 +1,90 @@
+/* Analogous Color Scheme
+   Primary: #4B9CD3
+   Secondary: #3A7CA5
+   Accent: #29648A
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #222;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  header, footer {
+    background-color: #4B9CD3;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .masthead {
+    background: url('../img/header-image.jpg') no-repeat center center/cover;
+    padding: 4rem 1rem;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  footer .socials i {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+
+  @media (min-width: 35rem) {
+    body { font-size: 1rem; }
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  }
+  
+  @media (min-width: 80rem) {
+    body { font-size: 1.25rem; }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+  }
